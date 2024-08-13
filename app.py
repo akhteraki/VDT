@@ -5,11 +5,11 @@ from tensorflow.keras.models import load_model
 import joblib
 
 # Load the model
-model_path = 'models/my_model.h5'
+model_path = 'my_model.h5'
 model = load_model(model_path)
 
 # Load the scaler
-scaler_path = 'models/scaler.pkl'
+scaler_path = 'scaler.pkl'
 scaler = joblib.load(scaler_path)
 
 # Load the original dataset to get the feature names (assuming the same file structure)
